@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Método Aprobado | Imperio Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Orbitron"', 'sans-serif'],
+              body: ['"Rajdhani"', 'sans-serif'],
+            },
+            colors: {
+              tech: {
+                dark: '#030712', // Almost black
+                panel: '#111827', // Dark gray panel
+                silver: '#E2E8F0', // Silver text
+                dim: '#94A3B8', // Dimmed text
+                border: '#334155', // Border color
+              },
+              neon: {
+                purple: '#A855F7',
+                blue: '#3B82F6',
+                cyan: '#06B6D4',
+                pink: '#EC4899',
+                green: '#10B981',
+                gold: '#F59E0B'
+              }
+            },
+            backgroundImage: {
+              'silver-gradient': 'linear-gradient(135deg, #E2E8F0 0%, #94A3B8 100%)',
+              'cyber-grid': 'radial-gradient(circle at center, rgba(56, 189, 248, 0.03) 0%, transparent 70%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #030712;
+        color: #E2E8F0;
+        font-family: 'Rajdhani', sans-serif;
+      }
+      .glass-tech {
+        background: rgba(17, 24, 39, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+      .text-glow {
+        text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+      }
+      .text-glow-blue {
+        text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+      }
+      .clip-path-polygon {
+        clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.15.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
